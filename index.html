@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".check").click(function(){
+			$(this).siblings().filter(".correct").css({"background": "green","color":"white"});
+		  });
+		});
+	</script>
+</head>
+<body>
+
+	<h1>Example quiz</h1>
+	
+	<h2>Question 1</h2>
+	<p>What is HTML used for?</p>
+	<form>
+		<input type="radio" id="content" name="HTML">
+	  	<label for="content" class="correct">Putting content on web pages</label><br>
+		<input type="radio" id="style" name="HTML">
+	  	<label for="style">Styling web pages</label><br>
+		<input type="radio" id="animation" name="HTML">
+	  	<label for="animation">Creating animations</label>
+		<br>
+		<input type="button" value="Check answer" class="check">
+	</form>
+	
+	<h2>Question 2</h2>
+	<p>What is CSS used for?</p>
+	<form>
+		<input type="radio" id="content" name="HTML">
+	  	<label for="content">Putting content on web pages</label><br>
+		<input type="radio" id="style" name="HTML">
+	  	<label for="style" class="correct">Styling web pages</label><br>
+		<input type="radio" id="animation" name="HTML">
+	  	<label for="animation">Creating animations</label>
+		<br>
+		<input type="button" value="Check answer" class="check">
+	</form>
+</body>
+</html>
